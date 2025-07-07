@@ -107,14 +107,16 @@ function validateExports(exports) {
     if (objectExports.length === 0) {
       throw new Error('There must be at least one export');
     }
-    return objectExports.map((key) => {
-      if (key !== '.' && !key.startsWith('./')) {
-        throw new Error(
-          `Invalid exports key: "${key}". It must be "." or start with "./"`,
-        );
-      }
-      return { key, type: key.endsWith('.json') ? 'json' : 'js' };
-    });
+    return objectExports
+      .filter((key) => !key.includes('*'))
+      .map((key) => {
+        if (key !== '.' && !key.startsWith('./')) {
+          throw new Error(
+            `Invalid exports key: "${key}". It must be "." or start with "./"`,
+          );
+        }
+        return { key, type: key.endsWith('.json') ? 'json' : 'js' };
+      });
   }
   throw new Error(
     'Invalid "exports" type. Only a string or object is supported',
