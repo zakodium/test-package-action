@@ -2,32 +2,25 @@
   "name": "test-package-action",
   "private": true,
   "version": "1.0.1",
-  "type": "module",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zakodium/test-package-action.git"
-  },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/zakodium/test-package-action/issues"
-  },
-  "homepage": "https://github.com/zakodium/test-package-action#readme",
+  "type": "module",
   "dependencies": {
     "@actions/core": "^1.11.1",
     "@actions/exec": "^1.1.1",
     "glob": "^11.0.3"
   },
-  "prettier": {
-    "arrowParens": "always",
-    "semi": true,
-    "singleQuote": true,
-    "tabWidth": 2,
-    "trailingComma": "all"
-  },
-  "volta": {
-    "node": "20.19.2"
-  },
   "devDependencies": {
-    "prettier": "^3.5.3"
+    "prettier": "^3.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zakodium/test-package-action.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zakodium/test-package-action/issues"
+  },
+  "homepage": "https://github.com/zakodium/test-package-action#readme",
+  "volta": {
+    "node": "24.5.0"
   }
 }
