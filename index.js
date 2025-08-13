@@ -100,7 +100,9 @@ function getTgzName() {
 
 function validateExports(exports) {
   if (typeof exports === 'string') {
-    return [{ key: '.', type: 'js' }];
+    throw new Error(
+      `The "exports" field must be an object, not a string. Use { ".": ${JSON.stringify(exports)} } instead`,
+    );
   }
   if (typeof exports === 'object' && exports !== null) {
     const objectExports = Object.keys(exports);
@@ -118,9 +120,7 @@ function validateExports(exports) {
         return { key, type: key.endsWith('.json') ? 'json' : 'js' };
       });
   }
-  throw new Error(
-    'Invalid "exports" type. Only a string or object is supported',
-  );
+  throw new Error('Invalid "exports" type. It must be an object');
 }
 
 function validateMain(main) {
