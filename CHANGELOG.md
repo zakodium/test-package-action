@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/zakodium/test-package-action/compare/v1.1.0...v1.1.1) (2025-08-13)
+
+
+### Bug Fixes
+
+* error on string exports ([#8](https://github.com/zakodium/test-package-action/issues/8)) ([bd5b233](https://github.com/zakodium/test-package-action/commit/bd5b233b46f8e1a96f67e7e56b293af1d2d7a7c1))
+
 ## [1.1.0](https://github.com/zakodium/test-package-action/compare/v1.0.1...v1.1.0) (2025-08-13)
 
 
