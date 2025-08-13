@@ -1,5 +1,5 @@
 name: 'test-package'
 description: 'Test that a package is ready for publication on a registry'
 runs:
-  using: 'node20'
+  using: 'node24'
   main: 'index.js'
