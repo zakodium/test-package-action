@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/zakodium/test-package-action/compare/v1.0.1...v1.1.0) (2025-08-13)
+
+
+### Features
+
+* update Node.js to v24 ([#6](https://github.com/zakodium/test-package-action/issues/6)) ([ef8c754](https://github.com/zakodium/test-package-action/commit/ef8c75473e35c6e8c0a87f5dde72fcfc9cba0a36))
+
 ## [1.0.1](https://github.com/zakodium/test-package-action/compare/v1.0.0...v1.0.1) (2025-07-07)
 
 
