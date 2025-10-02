@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/zakodium/test-package-action/compare/v1.1.1...v1.1.2) (2025-10-02)
+
+
+### Bug Fixes
+
+* do not allow Storybook stories in distribution ([#10](https://github.com/zakodium/test-package-action/issues/10)) ([8bb68de](https://github.com/zakodium/test-package-action/commit/8bb68deb43d336beb09a2e6184e82c1458e87a6e))
+
 ## [1.1.1](https://github.com/zakodium/test-package-action/compare/v1.1.0...v1.1.1) (2025-08-13)
 
 
