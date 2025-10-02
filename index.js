@@ -56,7 +56,7 @@ async function verifyExports() {
 }
 
 async function checkPublishedFiles() {
-  const forbiddenFiles = ['**/__tests__', '**/*.test.*'];
+  const forbiddenFiles = ['**/__tests__', '**/*.test.*', '**/*.stories.*'];
   core.info(
     `Looking for forbidden files with patterns: ${forbiddenFiles.join(', ')}`,
   );
