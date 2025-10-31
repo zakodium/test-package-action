@@ -18,7 +18,7 @@ const steps = [
 
 async function packLibrary() {
   core.info('Running `npm pack`');
-  await exec.exec('npm', ['pack']);
+  await exec.exec('npm', ['pack', '--no-ignore-scripts']);
 }
 
 async function installLibrary() {
