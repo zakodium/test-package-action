@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/zakodium/test-package-action/compare/v1.1.2...v1.1.3) (2025-10-31)
+
+
+### Bug Fixes
+
+* force not ignoring prepack scripts ([#12](https://github.com/zakodium/test-package-action/issues/12)) ([968363c](https://github.com/zakodium/test-package-action/commit/968363c473e23f918b5dd0218155d3ba8528a748))
+
 ## [1.1.2](https://github.com/zakodium/test-package-action/compare/v1.1.1...v1.1.2) (2025-10-02)
 
 
