@@ -2,8 +2,8 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 
-import core from '@actions/core';
-import exec from '@actions/exec';
+import * as core from '@actions/core';
+import { exec } from '@actions/exec';
 import { globSync } from 'glob';
 
 const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
@@ -18,16 +18,16 @@ const steps = [
 
 async function packLibrary() {
   core.info('Running `npm pack`');
-  await exec.exec('npm', ['pack', '--no-ignore-scripts']);
+  await exec('npm', ['pack', '--no-ignore-scripts']);
 }
 
 async function installLibrary() {
   core.info('Creating a new empty project');
-  await exec.exec('npm', ['init', '-y'], { cwd: testDir });
+  await exec('npm', ['init', '-y'], { cwd: testDir });
 
   core.info('Installing the package');
   const tgzPath = path.resolve(getTgzName());
-  await exec.exec('npm', ['install', tgzPath], { cwd: testDir });
+  await exec('npm', ['install', tgzPath], { cwd: testDir });
 }
 
 async function verifyExports() {
@@ -44,7 +44,7 @@ async function verifyExports() {
       : `${packageJson.name}/${key.slice(2)}`;
     const importAttributes =
       type === 'json' ? ', { with: { type: "json" } }' : '';
-    await exec.exec(
+    await exec(
       'node',
       [
         '-e',
