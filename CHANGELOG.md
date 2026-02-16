@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/zakodium/test-package-action/compare/v1.1.3...v1.2.0) (2026-02-16)
+
+
+### Features
+
+* update dependencies ([#14](https://github.com/zakodium/test-package-action/issues/14)) ([bfb5e4f](https://github.com/zakodium/test-package-action/commit/bfb5e4f8d225479c013f32110b8ba34efdc789f4))
+
 ## [1.1.3](https://github.com/zakodium/test-package-action/compare/v1.1.2...v1.1.3) (2025-10-31)
 
 
