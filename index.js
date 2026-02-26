@@ -103,8 +103,7 @@ function validateExports(exports) {
     throw new Error(
       `The "exports" field must be an object, not a string. Use { ".": ${JSON.stringify(exports)} } instead`,
     );
-  }
-  if (typeof exports === 'object' && exports !== null) {
+  } else if (typeof exports === 'object' && exports !== null) {
     const objectExports = Object.keys(exports);
     if (objectExports.length === 0) {
       throw new Error('There must be at least one export');
@@ -119,8 +118,9 @@ function validateExports(exports) {
         }
         return { key, type: key.endsWith('.json') ? 'json' : 'js' };
       });
+  } else if (exports !== null) {
+    throw new Error('Invalid "exports" type. It must be an object or null');
   }
-  throw new Error('Invalid "exports" type. It must be an object');
 }
 
 function validateMain(main) {
