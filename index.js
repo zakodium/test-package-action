@@ -32,9 +32,10 @@ async function installLibrary() {
 
 async function verifyExports() {
   core.info('Detecting package exports');
-  const exports = 'exports' in packageJson
-    ? validateExports(packageJson.exports)
-    : validateMain(packageJson.main);
+  const exports =
+    'exports' in packageJson
+      ? validateExports(packageJson.exports)
+      : validateMain(packageJson.main);
 
   for (const { key, type } of exports) {
     const isMain = key === '.';
@@ -118,7 +119,9 @@ function validateExports(exports) {
         }
         return { key, type: key.endsWith('.json') ? 'json' : 'js' };
       });
-  } else if (exports !== null) {
+  } else if (exports === null) {
+    return [];
+  } else {
     throw new Error('Invalid "exports" type. It must be an object or null');
   }
 }
