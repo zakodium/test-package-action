@@ -32,7 +32,7 @@ async function installLibrary() {
 
 async function verifyExports() {
   core.info('Detecting package exports');
-  const exports = packageJson.exports
+  const exports = 'exports' in packageJson
     ? validateExports(packageJson.exports)
     : validateMain(packageJson.main);
 
