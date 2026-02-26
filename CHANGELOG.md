@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.3](https://github.com/zakodium/test-package-action/compare/v1.2.2...v1.2.3) (2026-02-26)
+
+
+### Bug Fixes
+
+* really really allow `null` exports field ([#20](https://github.com/zakodium/test-package-action/issues/20)) ([eaa3cb5](https://github.com/zakodium/test-package-action/commit/eaa3cb5275ae5f80509723239426b94a471975a6))
+
 ## [1.2.2](https://github.com/zakodium/test-package-action/compare/v1.2.1...v1.2.2) (2026-02-26)
 
 
