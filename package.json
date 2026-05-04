@@ -5,12 +5,12 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "@actions/core": "^3.0.0",
+    "@actions/core": "^3.0.1",
     "@actions/exec": "^3.0.0",
-    "glob": "^13.0.3"
+    "glob": "^13.0.6"
   },
   "devDependencies": {
-    "prettier": "^3.8.1"
+    "prettier": "^3.8.3"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/zakodium/test-package-action#readme",
   "volta": {
-    "node": "24.13.1"
+    "node": "24.15.0"
   }
 }
