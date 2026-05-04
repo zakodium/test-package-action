@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.4](https://github.com/zakodium/test-package-action/compare/v1.2.3...v1.2.4) (2026-05-04)
+
+
+### Bug Fixes
+
+* update dependencies ([#22](https://github.com/zakodium/test-package-action/issues/22)) ([f0163e9](https://github.com/zakodium/test-package-action/commit/f0163e907e1ed8ca6a1be5a662e2459c0b75d8ac))
+
 ## [1.2.3](https://github.com/zakodium/test-package-action/compare/v1.2.2...v1.2.3) (2026-02-26)
 
 
